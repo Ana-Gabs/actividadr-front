@@ -1,0 +1,53 @@
+.hero-container {
+  position: relative;
+  padding: 5rem 1rem 3rem;
+  text-align: center;
+  overflow: hidden;
+}
+
+.wave-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60%;
+  background: linear-gradient(
+    135deg,
+    hsl(210, 80%, 70%),
+    hsl(290, 80%, 70%)
+  );
+  border-bottom-left-radius: 50% 20%;
+  border-bottom-right-radius: 50% 20%;
+  z-index: -1;
+  transition: background 0.3s ease;
+}
+
+@media (prefers-color-scheme: dark) {
+  .wave-background {
+    background: linear-gradient(
+      135deg,
+      hsl(210, 40%, 30%),
+      hsl(290, 40%, 30%)
+    );
+  }
+
+  .hero-content {
+    color: #f3f3f3;
+  }
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+ margin-bottom: 5rem;
+}
+
+.hero-content .name {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.hero-content .info {
+  font-size: 1rem;
+  opacity: 0.8;
+}
