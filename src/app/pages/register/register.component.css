@@ -1,0 +1,33 @@
+.register-container {
+  max-width: 400px;
+  margin: 3rem auto;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.field {
+  margin-bottom: 1.5rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+input[pinputtext],
+:host ::ng-deep .p-password,
+:host ::ng-deep .p-password input {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+:host ::ng-deep .p-password {
+  display: block;
+}
