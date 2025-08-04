@@ -21,7 +21,6 @@ export class HeaderComponent implements OnInit {
       { label: 'Inicio', icon: 'pi pi-home', command: () => this.router.navigate(['/home']) },
       { label: 'Registro', icon: 'pi pi-user-plus', command: () => this.router.navigate(['/register']) },
       { label: 'Iniciar Sesión', icon: 'pi pi-sign-in', command: () => this.router.navigate(['/login']) },
-      { label: 'Explorar', icon: 'pi pi-star-fill', command: () => this.router.navigate(['/home']) }
     ];
   }
 
