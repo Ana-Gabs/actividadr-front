@@ -1,0 +1,6 @@
+:host ::ng-deep .p-menubar {
+  border-radius: 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}

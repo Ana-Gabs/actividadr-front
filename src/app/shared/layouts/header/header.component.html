@@ -1,1 +1,11 @@
-<p>header works!</p>
+<p-menubar [model]="items" class="header-menubar">
+  <ng-template pTemplate="start">
+    <div class="logo-container">
+      <i class="pi pi-heart logo-icon" style="font-size: 1.8rem; color: crimson; margin-right: 0.5rem;"></i>
+      <span class="font-bold text-xl">GABS-CJ</span>
+    </div>
+  </ng-template>
+  <ng-template pTemplate="end">
+    <button pButton label="Salir" icon="pi pi-sign-out" class="p-button-danger p-button-sm" (click)="logout()"></button>
+  </ng-template>
+</p-menubar>
